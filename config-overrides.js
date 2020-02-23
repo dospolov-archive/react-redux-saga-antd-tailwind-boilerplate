@@ -1,10 +1,20 @@
-const { override, fixBabelImports, addPostcssPlugins } = require('customize-cra')
+const {
+  override,
+  fixBabelImports,
+  addPostcssPlugins,
+  addWebpackAlias
+} = require('customize-cra')
+const path = require('path')
 
 module.exports = override(
   fixBabelImports('import', {
     libraryName: 'antd',
     libraryDirectory: 'es',
     style: 'css'
+  }),
+  addWebpackAlias({
+    '@': path.resolve(__dirname, 'src'),
+    cmp: path.resolve(__dirname, 'src/components')
   }),
   addPostcssPlugins([
     require('tailwindcss')({
