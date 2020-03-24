@@ -11,7 +11,7 @@ const App = () => (
     <Switch>
       <Route path="/">
         <Header />
-        <h1>Hello from Ukraine</h1>
+        <h1 className="text-green-600">Hello from Ukraine</h1>
       </Route>
     </Switch>
   </ConnectedRouter>
