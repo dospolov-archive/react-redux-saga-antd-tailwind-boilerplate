@@ -1,24 +1,28 @@
 {
   "workbench.colorCustomizations": {
-    "activityBar.background": "#3e151f",
-    "activityBar.activeBackground": "#3e151f",
-    "activityBar.activeBorder": "#305f20",
+    "activityBar.background": "#113c6d",
+    "activityBar.activeBackground": "#113c6d",
+    "activityBar.activeBorder": "#dd2279",
     "activityBar.foreground": "#e7e7e7",
     "activityBar.inactiveForeground": "#e7e7e799",
-    "activityBarBadge.background": "#305f20",
+    "activityBarBadge.background": "#dd2279",
     "activityBarBadge.foreground": "#e7e7e7",
-    "titleBar.activeBackground": "#18080c",
-    "titleBar.inactiveBackground": "#18080c99",
+    "titleBar.activeBackground": "#0a2441",
+    "titleBar.inactiveBackground": "#0a244199",
     "titleBar.activeForeground": "#e7e7e7",
     "titleBar.inactiveForeground": "#e7e7e799",
-    "statusBar.background": "#18080c",
-    "statusBarItem.hoverBackground": "#3e151f",
+    "statusBar.background": "#0a2441",
+    "statusBarItem.hoverBackground": "#113c6d",
     "statusBar.foreground": "#e7e7e7",
-    "statusBar.border": "#18080c",
-    "titleBar.border": "#18080c"
+    "statusBar.border": "#0a2441",
+    "titleBar.border": "#0a2441"
   },
-  "peacock.color": "#18080c",
+  "peacock.color": "#0a2441",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "editor.formatOnPaste": false
+  "editor.formatOnPaste": false,
+  "typescript.quickSuggestionsForPaths": false,
+  "path-intellisense.mappings": {
+    "@": "${workspaceRoot}/src"
+  }
 }
