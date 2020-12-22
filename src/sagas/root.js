@@ -1,7 +1,5 @@
-// import { all, select, fork, setContext, takeEvery, put } from 'redux-saga/effects'
+// import { all, fork, put, takeEvery, call } from 'redux-saga/effects'
 
-function* rootSaga() {
-  yield console.log('saga started')
-}
+function* rootSaga() {}
 
 export default rootSaga

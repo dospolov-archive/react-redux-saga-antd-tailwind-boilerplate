@@ -1,10 +1,17 @@
+import produce from 'immer'
+
 const defaultState = {
-  appName: 'boilerplate'
+  appName: 'react-redux-saga-antd-tailwind-boilerplate',
+  loading: false
 }
 
-export default (state = defaultState, action) => {
+const common = produce((draft, action) => {
   switch (action.type) {
-    default:
-      return state
+    case 'store/loading/toggle': {
+      draft.loading = action.loading
+      break
+    }
   }
-}
+}, defaultState)
+
+export default common

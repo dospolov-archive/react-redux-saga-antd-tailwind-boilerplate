@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
 import { connectRouter } from 'connected-react-router'
-import common from './reducers/common'
+import common from '@/reducers/common'
 
 const createRootReducer = history =>
   combineReducers({

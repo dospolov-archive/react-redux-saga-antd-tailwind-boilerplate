@@ -1,20 +1,23 @@
 import React from 'react'
-import { history } from './configureStore'
 import { Switch, Route } from 'react-router-dom'
-import { ConnectedRouter } from 'connected-react-router'
-import Header from 'cmp/Header'
+import { connect } from 'react-redux'
+import { Button } from 'antd'
 
 import './App.css'
 
-const App = () => (
-  <ConnectedRouter history={history}>
-    <Switch>
-      <Route path="/">
-        <Header />
-        <h1 className="text-green-600">Hello from Ukraine</h1>
-      </Route>
-    </Switch>
-  </ConnectedRouter>
-)
+const App = ({ loading }) => {
+  return (
+    <>
+      <Switch>
+        <Route path="/">
+          <h1 className="text-red-500">Hi there</h1>
+          {!loading && <Button>Btn</Button>}
+        </Route>
+      </Switch>
+    </>
+  )
+}
 
-export default App
+export default connect(state => ({
+  loading: state.common.loading
+}))(App)
